@@ -28,6 +28,10 @@ public interface ThreeDimensionalShape {
     // Concrete implementation of getVolume() that delegates to abstract method
     double getVolume();
 
+    Object getName();
+
+    Object getColor();
+
     public abstract class Shape3D implements ThreeDimensionalShape {
 
         // Private fields for common properties
