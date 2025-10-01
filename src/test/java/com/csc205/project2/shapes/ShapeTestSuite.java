@@ -1,4 +1,4 @@
-/**
+package com.csc205.project2.shapes; /**
  * AI GENERATION DOCUMENTATION
  * ===========================
  * AI Tool Used: Claude Sonnet 4
@@ -17,8 +17,6 @@
  * Formula Verification:
  * - Test suite validates all shape formulas through comprehensive testing
  */
-
-package com.csc205.project2.shapes;
 
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.parallel.Execution;
@@ -70,7 +68,7 @@ class ShapeTestSuite {
         @Order(2)
         @DisplayName("Test Shape3D inheritance for all concrete shapes")
         void testShape3DInheritance() {
-            List<Shape3D> shapes = Arrays.asList(
+            List<ThreeDimensionalShape.Shape3D> shapes = Arrays.asList(
                     new Sphere("Red Sphere", "Red", 2.0),
                     new Cube("Blue Cube", "Blue", 3.0),
                     new Cylinder("Green Cylinder", "Green", 1.5, 4.0),
@@ -78,7 +76,7 @@ class ShapeTestSuite {
                     new Pyramid("Purple Pyramid", "Purple", 3.0, 4.0, 5.0)
             );
 
-            for (Shape3D shape : shapes) {
+            for (ThreeDimensionalShape.Shape3D shape : shapes) {
                 // Test common properties
                 assertNotNull(shape.getName(), "Name should not be null");
                 assertNotNull(shape.getColor(), "Color should not be null");
@@ -300,7 +298,7 @@ class ShapeTestSuite {
         @Test
         @DisplayName("Test toString format consistency")
         void testToStringFormatConsistency() {
-            Shape3D[] shapes = {
+            ThreeDimensionalShape.Shape3D[] shapes = {
                     new Sphere("Test Sphere", "Red", 2.0),
                     new Cube("Test Cube", "Blue", 3.0),
                     new Cylinder("Test Cylinder", "Green", 1.5, 4.0),
@@ -308,7 +306,7 @@ class ShapeTestSuite {
                     new Pyramid("Test Pyramid", "Purple", 3.0, 4.0, 5.0)
             };
 
-            for (Shape3D shape : shapes) {
+            for (ThreeDimensionalShape.Shape3D shape : shapes) {
                 String toString = shape.toString();
 
                 // All toString methods should include basic information
@@ -392,7 +390,7 @@ class ShapeTestSuite {
             // Scenario: Calculate material needed for surface coating
             double costPerSquareUnit = 5.0; // $5 per square unit
 
-            Shape3D[] objectsToCoat = {
+            ThreeDimensionalShape[] objectsToCoat = {
                     new Sphere("Metal Ball", "Steel", 1.0),
                     new Cube("Wooden Block", "Wood", 2.0),
                     new Pyramid("Stone Monument", "Stone", 3.0, 3.0, 4.0)
@@ -405,7 +403,7 @@ class ShapeTestSuite {
             assertTrue(totalCost > 0, "Total cost should be positive");
 
             // Verify each object contributes to cost
-            for (Shape3D shape : objectsToCoat) {
+            for (ThreeDimensionalShape.Shape3D shape : (ThreeDimensionalShape.Shape3D[]) objectsToCoat) {
                 double individualCost = shape.getSurfaceArea() * costPerSquareUnit;
                 assertTrue(individualCost > 0,
                         "Individual cost should be positive for " + shape.getName());
@@ -472,7 +470,7 @@ class ShapeTestSuite {
         @Test
         @DisplayName("Test comprehensive setter validation")
         void testComprehensiveSetterValidation() {
-            Shape3D[] shapes = {
+            ThreeDimensionalShape[] shapes = {
                     new Sphere(1.0),
                     new Cube(1.0),
                     new Cylinder(1.0, 1.0),
@@ -481,7 +479,7 @@ class ShapeTestSuite {
             };
 
             // All shapes should maintain state after failed setter calls
-            for (Shape3D shape : shapes) {
+            for (ThreeDimensionalShape.Shape3D shape : (ThreeDimensionalShape.Shape3D[]) shapes) {
                 // Test that objects maintain their state after validation failures
                 assertNotNull(shape.getName(), "Name should remain valid");
                 assertNotNull(shape.getColor(), "Color should remain valid");

@@ -53,13 +53,13 @@ public class Cube extends ThreeDimensionalShape.Shape3D {
 
     // Implement abstract method for surface area calculation
     @Override
-    protected double calculateSurfaceArea() {
+    public double calculateSurfaceArea() {
         return 6 * sideLength * sideLength;
     }
 
     // Implement abstract method for volume calculation
     @Override
-    protected double calculateVolume() {
+    public double calculateVolume() {
         return sideLength * sideLength * sideLength;
     }
 

@@ -52,13 +52,13 @@ public class Sphere extends ThreeDimensionalShape.Shape3D {
 
     // Implement abstract method for surface area calculation
     @Override
-    protected double calculateSurfaceArea() {
+    public double calculateSurfaceArea() {
         return 4 * Math.PI * radius * radius;
     }
 
     // Implement abstract method for volume calculation
     @Override
-    protected double calculateVolume() {
+    public double calculateVolume() {
         return (4.0 / 3.0) * Math.PI * radius * radius * radius;
     }
 

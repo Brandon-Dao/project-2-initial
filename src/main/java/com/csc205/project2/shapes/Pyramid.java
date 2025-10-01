@@ -78,7 +78,7 @@ public class Pyramid extends ThreeDimensionalShape.Shape3D {
 
     // Implement abstract method for surface area calculation
     @Override
-    protected double calculateSurfaceArea() {
+    public double calculateSurfaceArea() {
         // Base area
         double baseArea = baseLength * baseWidth;
 
@@ -96,7 +96,7 @@ public class Pyramid extends ThreeDimensionalShape.Shape3D {
 
     // Implement abstract method for volume calculation
     @Override
-    protected double calculateVolume() {
+    public double calculateVolume() {
         return (1.0 / 3.0) * baseLength * baseWidth * height;
     }
 

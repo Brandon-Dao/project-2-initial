@@ -73,14 +73,14 @@ public class RectangularPrism extends ThreeDimensionalShape.Shape3D {
 
     // Implement abstract method for surface area calculation
     @Override
-    protected double calculateSurfaceArea() {
+    public double calculateSurfaceArea() {
         // Surface area = 2(lw + lh + wh)
         return 2 * (length * width + length * height + width * height);
     }
 
     // Implement abstract method for volume calculation
     @Override
-    protected double calculateVolume() {
+    public double calculateVolume() {
         return length * width * height;
     }
 

@@ -1,4 +1,4 @@
-/**
+package com.csc205.project2.shapes; /**
  * AI GENERATION DOCUMENTATION
  * ===========================
  * AI Tool Used: Claude Sonnet 4
@@ -19,8 +19,6 @@
  * - Surface area formula: SA = 2(lw + lh + wh), for l=3, w=4, h=5: SA = 94
  */
 
-package com.csc205.project2.shapes;
-
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -33,12 +31,12 @@ class RectangularPrismTest extends BaseShapeTest {
     private static final double EXPECTED_SURFACE_AREA = 94.0; // 2(3×4 + 3×5 + 4×5) = 2(12+15+20) = 94
 
     @Override
-    protected Shape3D createShape() {
+    protected ThreeDimensionalShape.Shape3D createShape() {
         return new RectangularPrism();
     }
 
     @Override
-    protected Shape3D createShapeWithKnownValues() {
+    protected ThreeDimensionalShape.Shape3D createShapeWithKnownValues() {
         return new RectangularPrism(TEST_LENGTH, TEST_WIDTH, TEST_HEIGHT);
     }
 

@@ -63,14 +63,14 @@ public class Cylinder extends ThreeDimensionalShape.Shape3D {
 
     // Implement abstract method for surface area calculation
     @Override
-    protected double calculateSurfaceArea() {
+    public double calculateSurfaceArea() {
         // Surface area = 2πr² (two circular bases) + 2πrh (lateral surface)
         return 2 * Math.PI * radius * radius + 2 * Math.PI * radius * height;
     }
 
     // Implement abstract method for volume calculation
     @Override
-    protected double calculateVolume() {
+    public double calculateVolume() {
         return Math.PI * radius * radius * height;
     }
 

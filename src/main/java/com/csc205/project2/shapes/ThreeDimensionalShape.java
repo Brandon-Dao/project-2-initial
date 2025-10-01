@@ -59,9 +59,9 @@ public interface ThreeDimensionalShape {
         }
 
         // Abstract methods that concrete classes must implement
-        protected abstract double calculateSurfaceArea();
+        public abstract double calculateSurfaceArea();
 
-        protected abstract double calculateVolume();
+        public abstract double calculateVolume();
 
         // Getter and setter methods
         public String getName() {
