@@ -110,7 +110,7 @@ Generate the following shapes using AI assistance:
 
 **For Each Shape Class:**
 - Extends Shape3D (which implements ThreeDimensionalShape)
-- Implement the abstract calculation methods from Shape3D
+- Implement the abstract methods from ThreeDimensionalShape
 - Include proper constructors with validation
 - Override `toString()` with shape-specific formatting
 - Add any shape-specific methods if needed
