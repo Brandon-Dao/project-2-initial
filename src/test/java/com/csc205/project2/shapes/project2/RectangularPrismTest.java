@@ -1,4 +1,4 @@
-package com.csc205.project2.shapes; /**
+package com.csc205.project2.shapes.project2; /**
  * AI GENERATION DOCUMENTATION
  * ===========================
  * AI Tool Used: Claude Sonnet 4
@@ -19,6 +19,8 @@ package com.csc205.project2.shapes; /**
  * - Surface area formula: SA = 2(lw + lh + wh), for l=3, w=4, h=5: SA = 94
  */
 
+import com.csc205.project2.shapes.RectangularPrism;
+import com.csc205.project2.shapes.ThreeDimensionalShape;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

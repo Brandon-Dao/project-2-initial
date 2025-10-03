@@ -1,4 +1,4 @@
-package com.csc205.project2.shapes; /**
+package com.csc205.project2.shapes.project2; /**
  * AI GENERATION DOCUMENTATION
  * ===========================
  * AI Tool Used: Claude Sonnet 4
@@ -18,6 +18,7 @@ package com.csc205.project2.shapes; /**
  * - Test values verified against mathematical formulas and online calculators
  */
 
+import com.csc205.project2.shapes.ThreeDimensionalShape;
 import org.junit.jupiter.api.*;
 
 /**

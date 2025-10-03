@@ -1,4 +1,4 @@
-package com.csc205.project2.shapes; /**
+package com.csc205.project2.shapes.project2; /**
  * AI GENERATION DOCUMENTATION
  * ===========================
  * AI Tool Used: Claude Sonnet 4
@@ -18,6 +18,7 @@ package com.csc205.project2.shapes; /**
  * - Test suite validates all shape formulas through comprehensive testing
  */
 
+import com.csc205.project2.shapes.*;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.api.parallel.Execution;
 import org.junit.jupiter.api.parallel.ExecutionMode;

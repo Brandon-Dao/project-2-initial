@@ -1,4 +1,4 @@
-package com.csc205.project2.shapes; /**
+package com.csc205.project2.shapes.project2; /**
  * AI GENERATION DOCUMENTATION
  * ===========================
  * AI Tool Used: Claude Sonnet 4
@@ -20,6 +20,8 @@ package com.csc205.project2.shapes; /**
  *   For base 6×4, height 8: SA = 24 + 2×(1/2×6×√(2²+8²)) + 2×(1/2×4×√(3²+8²)) ≈ 24 + 51.15 + 34.64 = 109.79
  */
 
+import com.csc205.project2.shapes.Pyramid;
+import com.csc205.project2.shapes.ThreeDimensionalShape;
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
 

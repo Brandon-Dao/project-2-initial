@@ -1,4 +1,4 @@
-package com.csc205.project2.shapes;
+package com.csc205.project2.shapes.project2;
 
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
